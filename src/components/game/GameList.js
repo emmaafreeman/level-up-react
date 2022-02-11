@@ -20,10 +20,10 @@ export const GameList = (props) => {
               {game.title} by {game.maker}
             </div>
             <div className="game__players">
-              {game.number_of_players} players needed
+              - Players: {game.number_of_players}
             </div>
             <div className="game__skillLevel">
-              Skill level is {game.skill_level}
+              - Skill level: {game.skill_level}
             </div>
           </section>
         );

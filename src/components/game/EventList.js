@@ -28,9 +28,9 @@ export const EventList = () => {
         return (
           <section key={event.id} className="registration">
             <div className="registration__game">{event.game.title}</div>
-            <div>{event.description}</div>
+            <div>- {event.description}</div>
             <div>
-              {event.date} @ {event.time}
+              - {event.date} @ {event.time}
             </div>
             {event.joined ? (
               <button

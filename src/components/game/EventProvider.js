@@ -46,7 +46,6 @@ export const EventProvider = (props) => {
         Authorization: `Token ${localStorage.getItem("lu_token")}`,
       },
     })
-      // .then((response) => response.json())
       .then(getEvents);
   };
   
@@ -58,13 +57,13 @@ export const EventProvider = (props) => {
         "Content-Type": "application/json"
       },
     })
-      // .then((response) => response.json())
       .then(getEvents);
   };
 
   return (
-    <EventContext.Provider value={{ events, getEvents, createEvent, games, setGames, getGames, joinEvent, leaveEvent }}>
-      {props.children}
+    <EventContext.Provider value={{ events, getEvents, createEvent, 
+        games, setGames, getGames, joinEvent, leaveEvent }}>
+          {props.children}
     </EventContext.Provider>
   );
 };
