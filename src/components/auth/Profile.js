@@ -1,6 +1,5 @@
 import React, { useEffect, useContext } from "react";
 import { ProfileContext } from "./ProfileProvider.js";
-// import "./Profile.css";
 
 export const Profile = () => {
   const { profile, getProfile } = useContext(ProfileContext);
@@ -29,7 +28,7 @@ export const Profile = () => {
           About you: {profile.gamer && profile.gamer.bio}
         </div>
       </section>
-      <section className="profile__registrations">
+      {/* <section className="profile__registrations">
         <header className="registrations__header">
           <h3>Your Events</h3>
         </header>
@@ -46,7 +45,7 @@ export const Profile = () => {
             );
           })}
         </div>
-      </section>
+      </section> */}
     </article>
   );
 };
